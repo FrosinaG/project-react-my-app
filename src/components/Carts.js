@@ -8,7 +8,7 @@ const Carts = () => {
     useEffect(() => {
         axios.get("https://dummyjson.com/carts")
             .then((respones) => {
-                // response always will be object
+            
                 setCarts(respones.data.carts)
                 console.log(cartslists)
             })
@@ -18,8 +18,7 @@ const Carts = () => {
     }, [])
 
     if (!cartslists) return null;
-    // Ne raboti bidejki nemozis descrturing od lista t.e. ako prajs descturcting mora da e od object
-    // const { carts, products, id, title, price } = cartslists;
+  
 
     return (
         <div >

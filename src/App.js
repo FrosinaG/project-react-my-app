@@ -26,14 +26,12 @@ import { useSelector } from "react-redux";
 import { selectUser } from "./state/reducers/loginReducer";
 import Redux from "./components/Redux";
 
-
 const App = () => {
-  // const user = useSelector((selectUser) );
   return (
     <>
       <BrowserRouter>
         <Provider store={store}>
-          {/* <div>{user ? <Logout /> : <Login />}</div> */}
+         
           <NavHome />
           <Hero />
           <Nav />

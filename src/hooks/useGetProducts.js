@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-// Primer za custom hook
+
 const useGetProducts = (url) => {
   const [temp, setTemp] = useState();
 

@@ -9,7 +9,7 @@ const Productlink = ({ products }) => {
     let { id } = useParams();
     let location = useLocation();
 
-    // const { temp } = useGetProducts(`https://dummyjson.com/products/${id}`)
+
 
     const [productlink, setProductlink] = useState();
     console.log(useParams());
@@ -27,7 +27,7 @@ const Productlink = ({ products }) => {
         apicall()
     }, [])
     if (!productlink) return null;
-    // const { images, price, thumbnail, title } = productlink;
+
 
     return (
         <div className='prod-cont'>
