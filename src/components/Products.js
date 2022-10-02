@@ -6,14 +6,14 @@ import useGetProducts from '../hooks/useGetProducts';
 
 const Products = () => {
   const [productlist, setProduct] = useState();
-  // const { temp } = useGetProducts("https://dummyjson.com/products")
+
   useEffect(() => {
-    // console.log(productlist)
+   
     axios
       .get("https://dummyjson.com/products")
       .then((response) => {
         setProduct(response.data.products);
-        // console.log(response.data)
+     
       })
       .catch((error) => {
         console.error();
@@ -21,9 +21,7 @@ const Products = () => {
   }, []);
 
   if (!productlist) return null;
-  // console.log(productlist);
-  // const { products, id, title, description, images, price } = productlist;
-  // console.log("images", images);
+ 
   return (
 <>
       {productlist.map((product) => {

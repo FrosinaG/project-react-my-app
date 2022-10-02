@@ -87,7 +87,7 @@ const Login = () => {
           Log in
         </button>
         <ToastContainer />
-        {/* <button className="inp-but"> <Link to="/logout">Logout</Link></button> */}
+      
       </form>
     </div>
   );

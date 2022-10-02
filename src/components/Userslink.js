@@ -32,7 +32,7 @@ const Userslink = ({ data }) => {
                 <p><b>Phone:</b>{phone}</p></div>
             <div className='userprofimg'>
                 <img src={image} alt="image" className='userprofimg1' /></div>
-                {/* <Link to=""><button>Previous User</button></Link> */}
+              
 <button>Next User</button>
         </div>
 </>
