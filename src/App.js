@@ -31,30 +31,31 @@ const App = () => {
     <>
       <BrowserRouter>
         <Provider store={store}>
-         
           <NavHome />
           <Hero />
           <Nav />
-          <Logout/>
+          <Logout />
           <Routes>
             <Route element={<Redux />}>
-              <Route path="/" element={<Home />} />
-              <Route path="products" element={<Products />} />
-              <Route path="productlink/:id" element={<Productlink />} />
-              <Route path="carts" element={<Carts />} />
-              <Route path="cartslink/:id" element={<Cartslink />} />
-              <Route path="users" element={<Users />} />
-              <Route path="userlink/:id" element={<Userslink />} />
-              <Route path="posts" element={<Posts />} />
-              <Route path="posts/:id" element={<Postslink />} />
+              {" "}
+              <Route path="cartslink/:id" element={<Cartslink />} />{" "}
             </Route>
+            <Route path="/" element={<Home />} />
+            <Route path="products" element={<Products />} />
+            <Route path="productlink/:id" element={<Productlink />} />
+            <Route path="carts" element={<Carts />} />
+            <Route path="users" element={<Users />} />
+            <Route path="userlink/:id" element={<Userslink />} />
+            <Route path="posts" element={<Posts />} />
+            <Route path="posts/:id" element={<Postslink />} />
+
             <Route path="forms" element={<Forms />} />
             <Route path="login" element={<Login />} />
             <Route path="logout" element={<Logout />} />
             <Route path="addusers" element={<Addusers />} />
             <Route path="*" element={<Notfound />} />
           </Routes>
-        
+
           <Footer1 />
         </Provider>
       </BrowserRouter>
